@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <form>
+        <label for="First Name">First Name:</label>
+        <input type="text" name="Name" id="First Name" placeholder="Input First name">
+    </form>
+    <form>
+        <label for="Last Name">Last Name:</label>
+        <input type="text" name="Name" id="Last Name" placeholder="Input Last name">
+    </form>
+
+    <form>
+        <label for="Email">Email:</label>
+        <input type="email">
+    </form>
+
+    <form>
+    <label for="Message">Message:</label>
+    <textarea name="Message" id="comment" cols="30" rows="2" maxlength="200"  wrap="soft" placeholder="Message"></textarea>
+   </form>
+
+    <form>
+        <p>
+            <label for="gender">Gender:</label>
+            <input type="text" list="genderlist" name="gender" placeholder="Input your gender">
+        </p>
+    </form>
+    <datalist id="genderlist">
+        <option value="Male"></option>
+        <option value="Female"></option>
+        <option value="Other"></option>
+    </datalist>
+
+    <form>
+
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" step="1" min="1" max="125" value="36" id="age" name="age">
+        </div>
+    </form>
+
+    <form>
+        <label for="birth">Birth date:</label>
+        <input type="date" id="birth">
+    </form>
+
+    <div>
+        <input type="submit" value="Submit">
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
